@@ -1,0 +1,128 @@
+/* StaffFeedback.css */
+body{
+  background: linear-gradient(to right,#1BA098 10%,#a6eee9) ;
+}
+.feedback-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.ratings-form {
+  margin-top: 20px;
+}
+
+.rating-item {
+  margin-bottom: 20px;
+}
+
+.staff-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.feedback-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  height: 50px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* StaffFeedback.css */
+
+.feedback-container {
+  position: relative;
+  overflow: hidden;
+  transition: margin-left 0.3s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #3498db; /* Change this color to your desired navbar color */
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+.sidebar-open .sidebar {
+  left: 0;
+}
+
+.sidebar-toggle {
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #715d5d;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.sidebar-open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.sidebar-open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.sidebar-open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
